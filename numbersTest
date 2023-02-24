@@ -1,0 +1,7 @@
+Number=int(input("please give number"))
+Control=(Number>0 and Number%2==1)
+
+if Control==True:
+    print("{} possitive single number".format(Number))
+else:
+    print("{ not possitive single number}".format(Number))
