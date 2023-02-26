@@ -1,3 +1,3 @@
-# Python-tutorial-battleship
+# Python-tutorials
 
 this are my study notes and tutorials
