@@ -22,3 +22,23 @@ while True:
 #indentation error > girinti hatası
 #name error
 # 0 division error
+
+x=int(input("not zero please"))
+if x==0:
+    raise Exception("please rather than Zero")
+else:
+    print(x)
+
+def control(x):
+    if len(x)<5:
+        raise Exception("min 5 letters")
+    else:
+        print("success")
+
+x=input("decide the letters")
+
+try:
+    control(x)
+except Exception as ex:
+    print(ex)
+
