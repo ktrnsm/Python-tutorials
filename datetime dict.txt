@@ -1,0 +1,40 @@
+from datetime import*  
+import time
+
+x=datetime.now()
+print(x)
+
+x=datetime.today()
+print(x.strftime("%d-%m-%Y"))
+
+print(x.month)
+print(x.year)
+print(x.hour)
+print(x.minute)
+
+x=date(2023,10,10,12,15,30)#kendi formatını oluşturabiliyorsun.
+print(x)
+
+x=time(12,15,36)
+
+x=datetime.now()
+y=datetime.ctime(x)
+print(x)
+print(y)
+
+birthday=datetime(1984,9,16)
+today=datetime.today()
+diff=today-birthday
+print(diff.days)
+
+difference=timedelta(days=3251)
+future=today+difference
+print(future)
+past=today-difference
+print(past)
+
+
+while True:
+    Time=time.strftime("%H,%M,%S")
+    print(Time)
+    time.sleep(3)# zamanı yazacak 3 saniye bekleyip tekrar yeni saati yazacak.
