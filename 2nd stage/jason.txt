@@ -1,0 +1,14 @@
+{
+	"Name"	:	"ktrn",
+	"LastName"	:	"sm",
+	"Age"		:	"19",
+	"Lang"	:	["C#","JavaScript","Python"],
+	"Address"	:	[
+		{
+			"City"	:	"abc",
+			"County"	:	"edf"
+
+		}
+	]
+
+}
