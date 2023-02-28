@@ -7,7 +7,7 @@ import random
 
 class Site:
     def __init__(self):
-        self.turn=True
+        self.loop=True
         self.datas=self.getdatas()
 
     def program(self):# ekrana menü yazdıracak
@@ -54,9 +54,12 @@ class Site:
 
     def logincontrol(self,UserName,Password):#result içerindeki argümanları almak zorunda
         self.datas=self.getdatas()
-        for user in self.datas["Users"]:
-            if user["UserName"]==UserName and user["Password"]==Password:
-                return True
+        try:
+            for user in self.datas["Users"]:
+                if user["UserName"]==UserName and user["Password"]==Password:
+                    return True
+        except KeyError:
+            return False
         return False
 
     def loginsuccess(self):
@@ -126,7 +129,8 @@ class Site:
                     self.recorddatas(UserName,Password,Email)
                     break
                 else:
-                    input("false activation code please type again\n")
+                    print("wrong aactivation code")
+                    return False
 
     def isenrolled(self,UserName,Email):  # daha önce kayıt var mı kontrolü
         self.datas=self.getdatas()
@@ -152,11 +156,30 @@ class Site:
         else:
             return False
 
-    def getdatas(self): # json üzerinden veri almak için kullanılacak
-        pass
+    def getdatas(self): # json üzerinden veri almak için kullanılacak,dosya bulamazsa hata sebebiyle try ile başlıyoruz.
+        try:
+            with open("C:/Users/Şebnem/Desktop/tutorials/Users.json","r",encoding="utf-8") as Folder:
+                datas=json.load(Folder)
+        except FileNotFoundError:#dosyayı bulamazsa yenisi oluşturmak için
+            with open("C:/Users/Şebnem/Desktop/tutorials/Users.json","w",encoding="utf-8") as Folder:
+                Folder.write("{}")
+            with open("C:/Users/Şebnem/Desktop/tutorials/Users.json","r",encoding="utf-8") as Folder:
+                datas=json.load(Folder)
+            return datas
 
+        
     def recorddatas(self,UserName,Password,Email):#kayıt işlemini json veritabanına kaydetme işlemi
-        pass
+        self.datas=self.getdatas()
+        try:
+            self.datas["Users"].append({"UserName":UserName,"Password":Password,"Email":Email})
+        except KeyError:
+            self.datas["Users"]=list()
+            self.datas["Users"].append({"UserName":UserName,"Password":Password,"Email":Email})
+        
+        with open("C:/Users/Şebnem/Desktop/tutorials/Users.json","w",encoding="utf-8") as Folder:
+            json.dump(self.datas,Folder,ensure_ascii=False,indent=4) # türkçe karakter hatasından kaçınıyoruz.
+            print(" record has been built")
+        self.menureturn()        
 
     def quit(self):
         print( "good bye")
@@ -179,6 +202,6 @@ class Site:
                 print("please decive 5 or 4")
 
 System=Site()
-while System.turn:
+while System.loop:
     System.program()
         
