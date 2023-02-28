@@ -5,6 +5,8 @@ import random
 #json yapısını veri işleme veri kazıma için kullanacağız.
 #fonkiyona parametre göndererk prje yapılacak
 
+#73-74-75
+
 class Site:
     def __init__(self):
         self.loop=True
@@ -12,6 +14,7 @@ class Site:
 
     def program(self):# ekrana menü yazdıracak
         selection=self.menu()
+
         if selection=="1":
             self.login()
         if selection=="2":
@@ -44,7 +47,7 @@ class Site:
         UserName=input("Please type youe name")
         Password=input("please type your password")#login() bu karşılaştırmayı yapacak
 
-        result=self.login(UserName,Password)
+        result=self.logincontrol(UserName,Password)
 
         if result==True:
             self.loginsuccess()
@@ -200,7 +203,6 @@ class Site:
                 break
             else:
                 print("please decive 5 or 4")
-
 System=Site()
 while System.loop:
     System.program()
