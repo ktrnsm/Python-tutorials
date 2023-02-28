@@ -19,7 +19,22 @@ class Site:
         pass
     def loginfailure(self):
         pass
-
+    def enroll(self):
+        pass
+    def isenrolled(self):
+        pass
+    def activation(self):
+        pass
+    def activationcontrol(self):
+        pass
+    def emailcheck(self):
+        pass
+    def getdatas(self): # json üzerinden veri almak için kullanılacak
+        pass
+    def recorddatas(self):
+        pass
+    def menureturn(self):
+        pass
 
 System=Site()
 while System.turn:
