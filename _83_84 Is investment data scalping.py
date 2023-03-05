@@ -78,7 +78,22 @@ class Stock:
         self.returnmenu()
     
     def coid(self):
-        pass
+        while True:
+            try:
+                company=input("Co name")
+
+                url="https://www.isyatirim.com.tr/tr-tr/analiz/hisse/Sayfalar/sirket-karti.aspx?hisse={}".format(company)
+                parser=BeautifulSoup(requests.get(url).content,"html.parser")
+                identity=parser.find("div",{"id":"ctl00_ctl58_g_6618a196_7edb_4964_a018_a88cc6875488"}.find_all("tr"))
+                for i in identity:
+                    inf1=i.th.string
+                    inf2=i.td.string
+                    print(f"{inf1}:{inf2}")
+                break
+            except AttributeError:
+                time.sleep(3)
+        time.sleep(3)
+        self.returnmenu()
     
     def currentvalue(self):
         pass
