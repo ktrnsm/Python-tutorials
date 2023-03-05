@@ -77,7 +77,7 @@ class Stock:
         time.sleep(3)
         self.returnmenu()
     
-    def coid(self):
+    def coid(self):#company identity information scalping
         while True:
             try:
                 company=input("Co name")
@@ -96,13 +96,60 @@ class Stock:
         self.returnmenu()
     
     def currentvalue(self):
-        pass
+        while True:
+            try:
+                company=input("Co name")
+
+                url="https://www.isyatirim.com.tr/tr-tr/analiz/hisse/Sayfalar/sirket-karti.aspx?hisse={}".format(company)
+                parser=BeautifulSoup(requests.get(url).content,"html.parser")
+                currentv=parser.find("div",{"id":"ctl00_ctl58_g_76ae4504_9743_4791_98df_dce2ca95cc0d"}.find_all("tr"))
+                for i in currentv:
+                    inf1=i.th.string
+                    inf2=i.td.string
+                    print(f"{inf1}:{inf2}\n")
+                break
+            except AttributeError:
+                time.sleep(3)
+        time.sleep(3)
+        self.returnmenu()
 
     def turn(self):
-        pass
+        while True:
+            try:
+                company=input("Co name")
+
+                url="https://www.isyatirim.com.tr/tr-tr/analiz/hisse/Sayfalar/sirket-karti.aspx?hisse={}".format(company)
+                parser=BeautifulSoup(requests.get(url).content,"html.parser")
+                turn=parser.find("div",{"id":"ctl00_ctl58_g_aa8fd74f_f3b0_41b2_9767_ea6f3a837982"}.find("table")).find("tbody").find_all("tr")
+
+                for i in turn:
+                    inf1=i.find_all("td")
+                    print(f"Unit:{inf1[0].string} Daily(%):{inf1[1].string} Weekly(%):{inf1[2].string} Monthly(%):{inf1[2].string}Yearly(%):{inf1[3].string}")
+                    
+                break
+            except AttributeError:
+                time.sleep(3)
+        time.sleep(3)
+        self.returnmenu()
     
     def intindex(self):
-        pass
+        while True:
+            try:
+                company=input("Co name")
+
+                url="https://www.isyatirim.com.tr/tr-tr/analiz/hisse/Sayfalar/sirket-karti.aspx?hisse={}".format(company)
+                parser=BeautifulSoup(requests.get(url).content,"html.parser")
+                inti=parser.find("div",{"id":"ctl00_ctl58_g_655a851d_3b9f_45b0_a2d4_b287d18715c9"}.find("table")).find("tbody").find("tr").find_all("td")
+                inti2=parser.find("div",{"id":"ctl00_ctl58_g_655a851d_3b9f_45b0_a2d4_b287d18715c9"}.find("table")).find("thead").find("tr").find_all("th")
+
+                for i in range(0,3):
+                    print(f"{inti2[i].string}:{inti[i].string}")
+                    
+                break
+            except AttributeError:
+                time.sleep(3)
+        time.sleep(3)
+        self.returnmenu()
 
     def quit(self):
         self.loop=False
