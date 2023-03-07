@@ -1,4 +1,4 @@
-#NumPy-1st
+#91 NumPy-1st
 import numpy as np
 serial=np.array([1,2,3,4,5,6,7,8],dtype=int) 
 #print(type(serial)) # tek boyutlu dizi
