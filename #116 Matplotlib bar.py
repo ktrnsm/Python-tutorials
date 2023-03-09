@@ -18,10 +18,11 @@ Math=[90,55,75,45,35]
 Gram=[80,50,60,45,89]
 ph=[40,35,20,10,12]
 
-chart.bar(classes,Math,label="Math",color="red",width=a)
-chart.bar(classes,Gram,label="Grammar", color="blue",width=a)
-chart.bar(classes,ph,label="Physics",color="green",width=a)
+chart.bar(index-a,Math,label="Math",color="red",width=a)
+chart.bar(index,Gram,label="Grammar", color="blue",width=a)
+chart.bar(index+a,ph,label="Physics",color="green",width=a)
 chart.set_title(" average notes of classes",color="black")
 chart.set_xlabel("Classes")
 chart.legend()
+chart.set_xticks(ticks=index,labels=classes)
 plt.show()
