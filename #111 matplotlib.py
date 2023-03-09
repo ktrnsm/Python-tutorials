@@ -1,4 +1,4 @@
-#111 matplotlib 
+#111 matplotlib Line Graph
 import matplotlib.pyplot as plt
 Serial1st=[1,2,3,4,5]
 #plt.plot(Serial1st)
