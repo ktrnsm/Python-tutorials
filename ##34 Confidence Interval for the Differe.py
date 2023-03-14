@@ -29,3 +29,16 @@ conf=0.95
 interv=stats.norm.interval(0.95,loc=(Engmean-Frmean),scale=np.sqrt((varEn/nEng)+(varFr/nFr)))
 print(interv)
 
+
+#two different illness group
+n1=8
+n2=10
+maean1=3
+mean2=2.7
+varab=0.05
+con=0.95
+#find the reaction of the sickness of this two group's time with the confidental interval of %95
+n3=((1/n1)+(1/n2))
+cresult=stats.t.interval(0.95,df=(n1+n2-2),loc=(maean1-mean2),scale=np.sqrt(n3*varab))
+print(cresult)
+
