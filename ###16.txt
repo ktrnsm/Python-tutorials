@@ -1,0 +1,9 @@
+alınan verilerde hiyerarşi varsa label encoding yapısını kullanmaya çalışıyoruz.
+kadın erkek renkler verisinde herhagi bir hiyerarşik durum yok
+ama eğitim seviyesi verileri üzerinden çalıştığımızda bu yapı mevcuttur
+
+0 ve 1 lerden oluşan değerleri kategorik değişkenlere atam işlemini yapabiliriz.
+
+categorik değişkenleri encoding ile dönüştürmemiz gerekiyor.
+figure'e baktığımızda karşılaştırma çok kötü çıktı.
+modelin doğru seçilmesi gerekiyor. doğrusal modele çok uyumsuz çıktı
