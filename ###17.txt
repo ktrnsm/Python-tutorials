@@ -17,3 +17,21 @@ ancak hiper parametreleri biz ayarlarız ve buna model tunning denilir.
 
 çapraz doğrulama sonucunu inceleyelim
 
+mse be r2 değerlerinde mühim olan test verisi sonuçlarıdır.
+eğitim verisi değerleri ile arasındaki farkı gözlemlemek için kullanıyoruz.
+
+random state değerini ve %20 olarak verdiğimiz test train parçalamasını değiştirdiğimizde sonuçlarda oynamalar olduğunu gözlemliyoruz.
+
+biz yine daha önce çalıştığımız data üzerinden gideceğiz.
+Daha önceki örnekte olduğu gibi aynı şekilde ilerleyip train ve test olarak datayı bölüp devam ediyoruz.
+şimdi modelimizin kalitesini görmek adına bu modeli test ve train olarak bir fonksiyona gönderiyoruz.
+
+amacımız yüksek r2 değeri ve düşük mse değerine ulaşmak.
+
+est_size=0.2,random_state=42 bu iki değer bizim modelimizdeki hiperparametrelerdir. bu değerleri değiştirdikçe sonuçlarımız değişecektir.
+
+eğitim data setinin de kendi içerisinde parçalanarak iterasyona girmesi ve herbirisi için bir değer ortaya çıkartması.
+bu parçalama işlemini KFold yapısı sağlayacaktır.
+parçalama için iterasyon yapısını oluşturmamız gerekiyor.
+
+

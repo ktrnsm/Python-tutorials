@@ -1,0 +1,19 @@
+###18 
+
+A Learning Serial
+- ML / Supervised learning / Regression / Polynomial [….]
+
+Y=B0+B1X >>> tekli regresyon
+Y=B0+B1X1...BkXk çoklu regresyon
+veri setimiz doğrusal yapıya uymuyorsa, eğrisel bir yapı olmak zorunda.
+
+polinomsal yapı tekli
+Y=B0+B1X+B2X^^2+B3X^^3+....+BkX^^k
+polinomsal yapı çoklu
+Y=B0+B1X1+B2X2+B11X1^^2+B22X''2+B12X1X2.....
+
+üsetsel değerlere polinomun derecesi olarak isimlendiriyoruz.
+
+
+
+
