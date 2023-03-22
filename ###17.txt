@@ -1,0 +1,19 @@
+amacımız doğru model yapısını bulmak.
+aşırı öğrenme ve eksik öğrenme sorunlarından kaçınmak.
+optimal model yapısını çok fazla parametre etkiler.
+
+radyo dinlediğinizi hyal edin eski tip frekansı değiştirierek kanal bulunan.
+güzel bir kanal buldunuz ama biraz cızırtılı geliyor ses. bunu netleştirmek için ince ayar yapılıyor.
+bu işleme model tuning deniyor ve makine öğrenmesi yapısında bu ince ayarın adı hiper parametredir.
+
+örnek olarak bir regresyon yapısını düşünelim.
+y=B0 + B1X1 + B2X2+....+BkXk
+bu denklemdiki Beta değerlerini kusursuza yakın tahmin etmek için kullandığımız yapılara hiper parametre denir.
+beta'ların daha doğru sonuç üretmesini istiyoruz.
+Hiper parametre optimizasyonu içerisinde çok farklı yapılar bulundurur.
+train ve test setlerini a-doğru biçimde ayırmak hiper parametre optimasyonudur. 
+Parmetreler Beta'lar modelin sonucudur biz bunu belirlemiyoruz.
+ancak hiper parametreleri biz ayarlarız ve buna model tunning denilir.
+
+çapraz doğrulama sonucunu inceleyelim
+
