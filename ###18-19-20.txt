@@ -14,6 +14,11 @@ Y=B0+B1X1+B2X2+B11X1^^2+B22X''2+B12X1X2.....
 
 üsetsel değerlere polinomun derecesi olarak isimlendiriyoruz.
 
+https://www.kaggle.com/code/mahyamahjoob/real-estate-valuation-using-polynomial-regression
+iyi bir örnek çalışma incelenebilir.
+
+
+
 
 
 

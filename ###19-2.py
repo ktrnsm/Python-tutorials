@@ -1,8 +1,7 @@
 ###19.2 
 import pandas as pd
 import matplotlib.pyplot as plt
-import seaborn as sns
-from sklearn.lineer_model import LinearRegression
+import seaborn 
 
 original_data=pd.read_csv("C:/Users/Şebnem/Desktop/tutorials/Realestate.csv")
 data=original_data.copy()
