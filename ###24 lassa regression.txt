@@ -12,3 +12,4 @@ lasso modelde katsayıların bazılarını sıfırladığını katsayı toplamla
 
 şimdi daha önceki ridge modelinde yaptığımız gibi lasso modelinde de optimizasyon yapmamız gerekiyor.
 
+hiper parametre tahmini hiç kolay bir iş değildir. daha önceki örneklerde yapmış olduğumuz dataset analizleri bu tahmin için çok önemlidir.
