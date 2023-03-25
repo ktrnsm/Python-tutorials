@@ -1,0 +1,14 @@
+###24 lassa regression
+regresyon modeli en az sayıda değişkenle başarılı bir model kurulmasını ister.
+Ridge regresyonu lambda parametresi ile katsayıları cezalandırma işlemi yapıyorduk katsayıları sıfıra yakınlaştırma yapar ama hiçbirisnii sıfır yaparak modelden çıkartmaz
+lasso ise katsayıyı sıfırlayarak modelden dışlama yapar.
+lasso 'da da bir lambda hiperparametresi mevcuttur. cross validation ile makül bir lambda seçiyoruz.
+
+
+veri önişleme aşamalarını geçiyoruz.
+
+train skoru yüksek bir yapıyla çıkıp test setinde düşük bir sonuç gördüğümüzde aşırı öğrenme gerçekleştiğini söyleyebiliriz.
+lasso modelde katsayıların bazılarını sıfırladığını katsayı toplamlarını yazdırdığımızda görebiliriz.
+
+şimdi daha önceki ridge modelinde yaptığımız gibi lasso modelinde de optimizasyon yapmamız gerekiyor.
+
