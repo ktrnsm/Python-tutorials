@@ -1,0 +1,37 @@
+lineer regresyon modelide en küçük kareler yüntemini kullandık.
+çoklu doğrusal bağlantı problemi: elimizdeki bağımsız değişkenlerin birbiri ile korele olması
+r2 yapısı olması gereğinden çok fazla çıkar bu sorundur.
+aykırı gözlem de bizim için mevcut bazı sorunları görmemizi sağlıyor.
+
+çoklu doğrusal bağlantı probleminde biz değişkenleri dışlarız veya aykırı gözlemleri de dışlayabiliriz.
+ama bunlar bizi doğru sonuçtan uzaklaştıracaktır.
+bu uzaklaşmadan kaçınmak için çeşitli yöntemlerden birisi de ridge regresyon yapısıdır.
+bu yapı değişken korelasyonu yüksek olan yapılarda uygulanır. kısaca RR
+genellikle çoklu doğrusal modellerde kullanılır.
+
+Y = b0 + b1X1 + b2X2 + ... + bnXn + e
+
+burada, Y, bağımlı değişkeni, X1, X2, ..., Xn ise bağımsız değişkenleridir ve b0, b1, b2, ..., bn ise katsayılardır. "e" ise hata terimini temsil eder.
+
+Ancak ridge regresyonunda, katsayılar sınırlıdır ve şöyle hesaplanır:
+
+minimize edilen fonksiyon = SSE + λ * (b1^2 + b2^2 + ... + bn^2)
+
+burada, SSE, kareler toplamını temsil eder ve λ, sınırlama parametresidir. Bu parametre, katsayıların sınırlanmasının düzeyini belirler. Ridge regresyonu, veri setindeki varyansı azaltmak ve modelin tahmin gücünü artırmak için kullanılır.
+bu lamda hiper parametredir.
+bazı kaynaklarda L2 düzeltmesi olarakta geçmektedir.
+
+aşırı öğrenmeye dirençli bir yapıdır.
+aykırı gözlem değerlerine dirençlidir.
+anlamsız olan parametrelerin katsayılılarını sıfıra yakınsar ve modelin dışına atmaz.
+cross validation ile lamda parametresini optimize edebiliyoruz.
+
+R2 >> modelin açıklama gücü,
+bu yapının yüksek olmasını bekleriz.
+ eğer bağımsız parametreler arasında korelasyon varsa bu değer istediğimizde yüksek çıkar
+bu hatalı bir sonuçtur.
+ridge yapısı bu korelasyonlu katsayıları sıfıra yakınsar.
+
+
+
+bu yapıda lamda hiper parametresini cross validation ile optimize etmemiz gerek.
