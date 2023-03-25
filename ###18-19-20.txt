@@ -18,7 +18,10 @@ https://www.kaggle.com/code/mahyamahjoob/real-estate-valuation-using-polynomial-
 iyi bir örnek çalışma incelenebilir.
 
 
+polynomial regression, colorful, enjoyable, study
 
 
+çoklu doğrusal bağlantı problemi modelimizi tehdit edebilecek bir risktir, bu  kompakt grafik ile bağımsız değişkenler arasında doğrusal ilişki olup olmadığını kontrol ediyoruz. 
 
+r2 ve MSE değerlerinde iyileşme görebilirmiyiz diyerek polinom derecesini arttırıyoruz.
 
