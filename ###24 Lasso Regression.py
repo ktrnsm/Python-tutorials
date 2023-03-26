@@ -2,7 +2,7 @@
 import pandas as pd
 from sklearn.datasets import fetch_california_housing
 from sklearn.model_selection import train_test_split
-from sklearn.linear_model import Ridge,Lasso,LassoCV
+from sklearn.linear_model import Ridge,Lasso,ElasticNet
 import sklearn.metrics as mt
 import numpy as np
 housing = fetch_california_housing()
