@@ -1,0 +1,18 @@
+###33
+ PCA gibi bir boyut indirmgeme algoritmasıdır.
+
+doğrusal ayırma yapısındaki önemli nokta doğrusal dınırlandırmadır.
+ 
+PCA yapısında eilimizdeki değişkenleri bir bileşen yapısında saklıyorduk ve gösteriyorduk.
+LDA yapsında ise veri noktalarından ziyade veri sıfınları arasındaki varyansı maksimize etmeye çalışan yöntem
+PCA bağımlı değişken yapısını istemezken LDA yapısında bağımlı değişkene dair bir sınıflama yapısı oluşturur ve sınıflar arasındaki varyansı oluşturur.
+
+
+LDA yapısı bizden etiketlenmiş yapıları da istiyor.
+
+
+Lda   yapısında sınıf kavramı devreye girdiği için PCA da olduğu gibi bize 11 değişkenli sonuçları vermiyor.
+
+n<= min(değişkensayısı,sınıf sayısı-1)
+11 değişkenli yapımızda,
+n<=6-1 >>> 5'den fazla  bileşen vermiyor.
