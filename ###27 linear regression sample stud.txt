@@ -1,1 +1,20 @@
 ###27 linear regression sample study
+
+kaggle üzerinden bir dataset üzerinde çalışacağız linkten yapıyı indirebilirsiniz
+https://www.kaggle.com/code/faressayah/practical-introduction-to-10-regression-algorithm/input?select=USA_Housing.csv
+
+grafiklere genel bir bakış atalım.
+
+bağımlı değişken olarak kabul ettiğimiz değişken yapısının normal bir dağılım göstermesini isteyebiliriz.
+bağımsız değişkenler arasında doğrusal ilişkinin olmamasını isteriz.
+
+grafikere baktığımızda tamamen Price ile ilişkili doğrusal yapılar göze çarpmakta.
+
+varyans infiastion factor,
+ vif sonuçlarında 5 ve üzeri değerler çoklu bağlantı sorunlarına işaret eder.
+vif değerleri 1 civarında dolaştığı için ilişki görünmüyor. istatistiki olarak teyid etmiş olduk.
+şimdi train test parçalama işlemine geçebiliriz.
+
+
+doğrusal bağlantı sorunu olmadığını düşündüğümüz yapıda çıkan sonuçlar birbirine yakın çıkması bklediğimiz bir durum.
+doğrusal bağlantı sorunu olsaydı r2 değeri linear model'de çok yüksek çıkardı.

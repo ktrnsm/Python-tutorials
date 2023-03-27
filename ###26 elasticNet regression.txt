@@ -1,0 +1,15 @@
+###26 elasticNet regression
+
+Elimizdeki data setlerinde ridge, lasso yapılarını beraber kullanıp r2 ve mse değerlerine bakabiliriz.
+ridge ve lasso L1 ve L2 ismiyle de geçen katsayılarını düzenleme işlemi olduğunu biliyoruz.
+
+elasticNet bu iki yapıyı birden kullanır.
+ridge katsayıları cezalandırma  ve lasso'nun değişken seçimi metodunu uygulayan yapıdır.
+bu elimizdeki modele göre değerlendirilecek bir durumdur, daha iyi veya daha kötü olduğu söylenemez
+
+çoklu doğrulal corelasyon problemi var ise bağımsız değişkenler içerisinde biribirin etkileyen değerler var demektir.
+bu yapılar y'nin açıklama gücünü yukarı doğru çeker  bizde r2 değerini aşağıya doğru çekmeye çalışıyoruz.
+
+bir de hata yapılarına bakalım.
+elimizdeki datasetine ait en iyi modeli ve düzeltmeyi çıkarmat için score be mean squared error değerlerini karşılatırıyoruz.
+
