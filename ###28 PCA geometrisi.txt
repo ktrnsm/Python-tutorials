@@ -1,0 +1,47 @@
+###28 PCA geometrisi
+dağınık şekilde bir ortamda duran kişilerin fotoğrafını çekmek istediğinizde hangi açıdan net bir şekilde hepsinin fotoğrafını çekebilirsiniz ? burada önemli olan konu doğru noktayı bulmanız gerek.
+
+1st doğru açılar arasından en iyi açıyı bulabilmek
+
+çektiğiniz fotoğrafı bir eksene izdüşümünü aldığınızda düzleme düşen veri noktalarının aralarındaki mesafeler önem arzetmektedir.
+her açıda farklı bir varyans oluşturacaktır.
+X ve Y eksenlerinde bu iz düşümleri ve eksenlere denk gelen iz düşümlerini inceleyebiliriz.
+daha rahat çalışmak adına üçüncü bir eksen oluşturabiliriz.
+doğru açı aslında maksimum varyans değerinin oluşturduğu doğru açı gibi düşünebiliriz.
+X ve Y koordinatlarında oluşan değerlerin ortalamalarını alıp yeni bir -x,-y değerlerinin de olduğu bir grafiğe bu ortalamarı 0,0 noktası olarak ayarlayıp inceliyoruz.
+sadece taşıma işlemi yaptık, aralarındaki meafe farkı oluşmuyor.
+orijinden geçecek şekilde bir sürü doğru oluşturabiliriz.
+bize maksimum varyans değeri için doğru açıya sahip bir doğru gerekli.
+noktaları referrans olarak doğrulara en küçük olan mesafeye sahip olan ve orijinden geçen doğru oluşturmak.
+doğrunun açısı değiştikçe verilerin çizdiğimiz doğru olan uzaklıkları da değişecektir.
+X ve Y eksenlerinde orijinden geçen doğrumuza olan mesafeleri alıp doğrumuzun üzerinde yansıyan noktaların orijine olan mesafelerin karesinin maksimum olduğu açı bize ihtiyacımız olan açıyı verecektir.
+mesela açımızı 0.25 olarak bulduk 1/4 olduğunu düşünürsek, 1 birim y ekseninde, 4 birim x ekseninde hareket ettirmemiz gerekecek.
+a2+b2=c2 denkleminde
+c=17^0.5 olarak bulunur.  yaklaış 4.12
+bu değere bir a ve b değerlerini böldüğümde
+4/4.12 ve 1/4,12
+x>>0.97, y>>0.24 ağırlık değerlerini bulmuş oluyoruz ve artık bu iki eksen değerlerini birleştirmiş oluyoruz, aslında bir ölçeklendirme yaptık,
+oluşan maksimum varyansı veren eksenlerimize yerleştirdiğimizde PC1 ve PC2 eksenlerinden oluşan yeni bir grafiğimizin üzerine değerlerimizi yazabiliyoruz.
+
+değerleri aldığımızı düşünelim,
+değişkenler üzerinde biz bir alt boyut elde ettik.
+örnek olarak;
+PC1 =15
+PC2 =3
+3+15= 18
+
+açıklanan varyans oranları
+PC1=15/18  
+PC2=3/18
+
+daha önceki örneğimizde 11 değişkenli datasetimizde değişkenlerin varyans oranlarına bakmıştık işin arkasındaki matermatik ve geometrinin açıklaması bu şekilde.
+değişkenlerin ağırlıklarının hesaplanması işte bu şekilde yapılıyor.
+
+
+
+
+
+
+
+
+

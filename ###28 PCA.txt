@@ -1,1 +1,58 @@
 ###28 PCA
+çok boyutlu uzaydaki verinin daha düşük bboyutlu uzaya izdüşümü olarak tarif edilir.
+birleşenleri bağımsızdır. önemli bir konudur.
+modelleme yapısı değil algoritma yapısıdır.
+winzip veya winrar elimizdeki büyük boyutlu dosyaları saklamak için kullanıoru<.
+makine öğrenmesinde elimizdeki bağımsız değişken yapıları bazı sorunları da getiriyor.
+PCA bu bağımsız değişkenler üzerinde bir sıkıştırma yaptığını düşünebiliriz.
+çok fazla olan değişkenleri görselleştirmek istediğimizde bizi sorun yaratır ve çok fazla değişken demek gürültü oluşturabilir.
+tutarsız veriler, aykırı gözlem değerleri bu gürültüye örnek sayılabilir.
+
+öncelikle bazı kavramları bilmemiz gerekir.
+
+3 önemli kavramı iyi bir şekilde öğrenmemiz gerek.
+
+öz nitelik kavramı
+şimdiye kadarki örneklerdiki bağımsız değişken yapıları aslında öz nitelik içerisine girer
+ev fiyatları üzerinde çalıştığımızı düşünün,
+ev= odasayısı BinaYaşı Büyüklüğü....
+1	2		8	100
+2	4		10	14
+3	3		15	135
+4
+.
+.
+
+tek boyutlu matris yapısına vektör diyoruz.
+
+X=[x1 x2 x3 xk	]
+
+tek sayı skaler,
+tek boyutlu matris vektör
+birden fazla boyut varsa matris diyoruz.
+
+
+
+öz değer kavramı
+2x2 kare bir matris olduğunu düşünün 2(satır sayısı)x2(sütun sayısı)
+
+2x2  matris yapısını bir vektör 2x1 ile çarptığımızda sonuç 2x1 vektör yapısına dönüşür.
+
+öz vektör kavramı
+matrisimizi çarptığımız 
+
+bir matrisi bir  öz vektör ile çarptığımızda = bir özdeğer ve öz vektör 
+bir matrisi öz değer ve özvektörlere nasıl parçalandığını inceleyelim. 
+
+
+makine öğrenmesinde her bağımsız değişken vektörel olarak girer ve makine bir matris çıkartmaya çalışır.
+covariance yapısında her gözlem değerini ortalamadan çıkartıyoruz. python bunu kendisi yapıyor. ve özdeğer ve öz vektörleri çıkartıyor.
+
+grafiği incelemekte zorlanıyoruz bu 11 değişkende bile görselde problem yaşıyoruz.
+
+bir haritayı küçültmek gibi düşünebilirsiniz. aynı değerlerle elimizdeki bağımsız değişken yapılarını
+
+açıklanan varyans değerlerini kümülatif olarak bize verecektir.
+
+öncelikle data setimizin hangi modele uyduğunu incelemiyoruz. lineer bir yapı kuruyoruz
+buradaki amacımız grafikteki keskin kırılım bölgesii tespit etmek.
