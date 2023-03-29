@@ -1,1 +1,12 @@
 ###42 Bagging
+aşırı öğrenme yüksek varyanslı bir yapı.
+eğitim data setinde verdiğiniz bilgilerde çok ufak değişikler yaptığında önceci train datasetini ezberlediği için çok yanlış sonuçlar verecektir.
+
+bagging yapısı orjinal datasetini parçalıyor, ve birden fazla karar ağacı çıkartarak vayans durumunu düşürmeye çalışıyor.
+cross validating birbirine benzer ve karıştırılır ama görevleri farklıdır.
+cross validation model doğrulama yapısıdır.
+bagging varyansı düşürebilmek adına çalışır
+
+
+
+r2 ve rmse değerlerinde hiperparametre yapısı kullanmadan bile bagging ile desicion tree yapısına göre iyileşme görünmektedir.
