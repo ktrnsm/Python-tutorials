@@ -1,1 +1,21 @@
 ###36 Support Vector Regression SVR
+support vektör sınırlama problemi olarak da kullanılır genelde Support vector machine olarak geçer.
+
+ilk olarak doğrusal regresyonu öğrendik, elimizdeki noktalara en uygun doğruyu çiziyorduk.
+bu doğruyu tahmin ederken en küçük kareler yönetmi ile çalışıyorduk.
+ana mantığı elimizdeki noktaların doğruya olan uzaklığını minimize eden bir yapıydı.
+y=B0+B1X1 yapısında katsayıları tahmin etmek için kullanıyorduk.
+deste vektör yapısı bize farklı bir esneklik sunuyor bize bir marjin aralığı tanımlıyor.
+hata yapma toleransı tanımlıyor,
+ana amacı elimizdeki noktaları bu iki marjin aralıkta maksimize etmemize yardımcı oluyor.
+marjin çizgileri dışında kalan uç değerleri de törpüleyen bir yapı uygulanmaktadır.
+doğrusal olmayan bir yapıda da support vektör çalışır.
+neden bu yapıya ihtiyacımız var,
+hataların esnek olmasını isteyeceğimiz durumlarda meydana gelecek.
+genel amacımız elimizdeki verseti üzerinden hataları minimize ederek makinenin öğrenmesini sağlamak
+
+ilk örnek için küçük bir dataseti kullanalım 
+https://www.kaggle.com/datasets/akram24/position-salaries
+Position_Salaries.csv
+
+kernel yapısında bu tahmin için 3 adet hiper parametre yapısı bulunmakta
