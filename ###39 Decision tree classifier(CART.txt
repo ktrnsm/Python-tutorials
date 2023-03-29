@@ -1,0 +1,10 @@
+###39 Decision tree classifier(CART)
+
+yalnızca koşullu kontrol ifadelerini içeren bir algoritmayı görüntülemenin bir yoludur.
+
+boy kilo ve yaş tan oluşan 3 adet değişken oluşturalım tamamen rastgele oluşturduğumuz bir yapı olduğun düşünün. 20adet rastgele değerler girelim.
+karar ağacından yaşı tahmin etmesini istediğimizde boy ve kilo olarak bize bir x,y ekseninde optimum bir mesela boy değeri seçer örne 170 olsun. grafik alanını 170'den küçük olanlar ve olmayanlar olarak böler, 170'den kısa olanların bulunduğu alanda kalan kilo değerlerini ne optimal bir yerden böler mesela 65kilodan küçük mü büyükmü şeklinde, 65' kilodan küçük olan kısımda optimum yerden boy ölçülerini böler mesela 165 olsun bu şekilde devam ederek, bize kilo, boy ilişkisinden ortalama yaş tahmini yapar
+karar ağacı varyans yapısını kullanarak parçalama yapar.
+
+
+l
