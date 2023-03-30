@@ -1,0 +1,10 @@
+###45 Random Forest Decision Tree
+
+Bagging data setine göre farklı farklı yerlerden örnekler alıyor
+aldığı her örnek için karar ağacı yapısı çıkartıyor.
+çıkardığı örneklerin ortalaması ile aggrigation işlemi gerçekleştiriyor.
+
+random forest yapısında ise, bütün değişkenleri kullanmak yerine değişkenleri parçalışyor ve karar ağacı modelleri çıkartıyor.
+sonra onlar üzerinden  bir regresyon yapısında ortalama alarak işlemi oluşturuyor.
+
+hipermetre aralığı ne kadar fazlaysa işleme süresi  o kadar deneme yapacağı için uzayacaktır.
