@@ -1,0 +1,33 @@
+###49 Classification
+yaş boy ve kilodan oluşan 3 değişkenli bir verisetimiz olduğunu düşünlelim,
+yaş değerini Y olarak tanımlayıp diğer verileri X olarak değerlendirip duruma göre herhangi bir regression yapısını kurabiliriz.
+sınıflandırma yapısında ise verdiğimiz sayısal girdileri kategorik bir çıktıya etiketli bir çıktıya ihtiyacımız varsa burada sınıflandırma 
+
+fazladan cinsiyet olarak bir sütun ekleyip cinsiyet tahmini yapmaya çalıştığımızda sınıflandırma algoritmalarını kullanmamız gerekir.
+
+kişilerin kilo verisi üzerinden Cinsiyetini tahmin etmeye çalıştığımızda regresyon modelleri ile doğru tahmin yapamayabiliriz.
+logistik regresyon'da sigmoid fonksiyonu olarak geçen yapıyı çizebiliriz. ve bize bir S yapısı içeren eğri sonucu verir.
+
+f(x) = 1/(1+e^-x)
+y=B0+B1X
+G(y)=1/(1+e^(B0+B1X))
+
+Bo+b1X tahmininde biz en küçük kareler yönetimini kullanıyorduk ama lojistikte bunu kullanamıyoruz.
+onun yerine maksimum olasılık tahmini'ni (MLE) kullanacağız.
+Parametre uzayında olabilirlik fonksiyonunu maksimize eden noktaya maksimum olabilirlik tahmini denir.
+Türevlenebilir.
+
+Bu yapının ana mantığı koşullu olasılık yapısıdır.
+Mesela cinsiye üzerinden bir çalışma yaptığımızda k=0, E=1 >> Y={E 1 K 0} bu örnekte 1 değerinin olasılığını bulursak zaten diğerini de bulmuş oluyoruz.
+P(x) = P(Y=1 |x)
+
+P(X1)*P(X3)*P(X4)*(1-P(X2)*(1-P(X5) bu fonksiyona olabilirlik fonksiyonu denir
+
+Binary logistic regression >> only Two categories
+multinomial logistic regression>> more than two as like colors there is no hyerarchy
+ordinal logistic regression >> aralarında bir hiyerarşi varsa mesela aldığınız hizmetin kalitesini belirten iyi kötü çok kötü gibi.
+
+
+regresyon tahmin problemi olsaydı r2 ve MSE ile model başarısını ölçebilirdik.
+Sınıf yapısında hata matrisi ile modelin başarısını ölçmeye çalışacağız.
+
