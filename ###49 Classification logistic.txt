@@ -31,3 +31,5 @@ ordinal logistic regression >> aralarında bir hiyerarşi varsa mesela aldığı
 regresyon tahmin problemi olsaydı r2 ve MSE ile model başarısını ölçebilirdik.
 Sınıf yapısında hata matrisi ile modelin başarısını ölçmeye çalışacağız.
 
+
+
