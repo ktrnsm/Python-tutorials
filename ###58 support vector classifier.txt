@@ -1,0 +1,10 @@
+###58 support vector classifier
+SVM Support Vector Machine
+support vektör regresyonunda olduğu gibi bir marjin aralığı oluşturur.
+Bu aralığın maksimum marjinli hiper düzlem adı verilir.
+yaş ve kilo bağımsız değşkenlerine bağlı bir x - y eksenk sisteminde kadın ve erkek cinsiyet bağlı değişkenini farklı iki simge ile gösterdiğimizde, SVM için iki sınıfı en iyi ayrıabilecek ve aralarındaki mesafeji maksimum seviyeye çıkartacak sınırları çizmek için çalışır.
+
+SVR yapısında kernel isimli bir hipermetre kullanıyorduk, iki küme arasındaki en büyük marjinal alanı oluşturmak için,
+doğru polinom veya RBF şeklinde ayrım yapılablir.
+
+iyi çalışan bir algoritma yapısıdır.
