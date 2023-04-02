@@ -1,0 +1,12 @@
+###64 SMS
+
+bir makine bir sms'in spam olup olmadığını nasıl ayırt edebilir ?
+sms'in kaç karakterden olduğu sayısına bir bakalım
+
+kelimeleri ayırabiliriz. noktalamalara bakabiliriz, sayıları ortadan  kaldırabiliriz. farklı dil yapılarını tespit etmeye çalışabilirz.
+bu konu tamamen çalışma şekline bağlıdır
+
+bütün amacımız sms sütununu nasıl parçalayacağımız konusu.
+
+cümleleri parçaladık istediğimiz işlemlerden geçirdik ve yeniden oluşturduk
+metin yapısının makinenin anlayacağı bir dile, vektore dönüştürmemiz  gerekiyor.

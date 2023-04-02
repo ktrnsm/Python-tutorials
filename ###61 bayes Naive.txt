@@ -1,0 +1,65 @@
+###61 bayes Naive
+
+birbiriyle kesişen iki küme olduğunu düşünün ve bu iki kümeninde örnerkler uzayı içerisinde olduğunu düşünelim.
+
+A kümesi >> Zarın 2'den büyük gelmesi
+B Kümesi >> Zarın Çift gelmesi
+
+ilk zarın 1 geldiğini düşünelim.
+iki küme dışında ama örneklem uzayı içerisinde bir  sonuç çıktı.
+
+ikinci zar 2 geldi
+B kümesi
+
+üçüncü zar 3
+A kümesi
+
+dördüncü zar 4
+ A ve B kesiçim kümesi
+
+beşinci zar 5
+A kümesi
+
+son zar 6
+A ve B kesişim kümesi.
+
+örneksel uzayın eleman sayısı n(s)=6
+P(s) =6/6 =1 
+0<P<1 bütün olasılıklar bu denklem içerisinde gerçekleşir
+
+P(A) =n(a)/n(s)  >> 4/6 =2/3
+P(B)=n(b)/n(s) >> 3/6 =1/2
+
+seneryoyu biraz değiştirelim mesela gözlerimiz kapalı attığımızı düşünelim.
+başka bir gözlemci bize sonucun 2'den büyük olduğu bilgisini verdiğini düşünelim, ve sayının çift olma olasılığını sorduğunu düşünelim
+bu duruma koşullu olasılık durumu olarak adlandırılır.
+olası sonuçları mantık yürüterek çözerlse gelen zar[3,4,5,6] çift olasılığı 1/2 çıkar.
+
+koşullu olasılık üzerinden bir çalşma yaptığımızda
+P(B/A)=P(anB)/P(A) >> 2/6 == 1/3
+P(A) =2/3 
+ikisinin çarpımı biz yine 1/2 sonucunu verir.
+
+iskambil kağıdı örneği üzerinden gidelim.
+52 kart var,
+A>> Maça olma durumu
+B>> Siyah olma durumu
+
+çekilen kartın siyah olduğu biligisi var maça olma ihtimalini hesaplayalım
+
+n(S)=52
+n(A)=13
+n(B)=26
+n(AnB)=13
+
+P(A/B)=p(AnB)/p(B) =(13/53)/(26/52)=1/2
+
+bayes teoremi ise bu iki olasılık türünü birbiri cinsinden yazazarak tek denkleme indirgeme işlemini yapar bunu da kesişim kümelerinden kurtularak yapar.
+
+P(A/B) = P(B/A).P(A)/P(B)
+
+
+3 ana çeşidi bulunmakta.
+Bernoulli yapısı
+Multinomial
+Gouss

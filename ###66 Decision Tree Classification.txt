@@ -1,1 +1,11 @@
 ###66 Decision Tree Classification
+
+boy kilo cinsiyet değişkenleri üzerinden yine örnekleme yapalım.
+Kilo ve boy X e y eksenleri üzerinde cinsiyeti bir saçılım diagramı oluşturduğumuzu hayal edin.
+karar ağacı regresyonunda olduğu gibi yapı yine parçalama işlemi yapar,
+regresyon istenilen değer için alan içerisinde ortalama alarak bize sonuç döndürüyordu,
+classification yapısında model fazla olan değeri tahmin değeri ile bize çıkartıyor.
+
+ID3 algoritması veri setinde karar ağacı uygulaması için oluşturulmuştur.
+info(D)
+
