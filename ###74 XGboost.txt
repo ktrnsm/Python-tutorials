@@ -1,0 +1,24 @@
+###74 XGboost 
+gradient boosting algoritmasının gelişmiş halidir.
+
+aşırı öğrenme problemi veya eksik gözlem durumunda başarılı sonuçlar veren bir yapıdır.
+
+regresyon modellerinde de kullanılmaktadır.
+
+
+Decision Tree metodu bagging ile geliştirilmiş ve Random Forest'a evrilmiştir. Random Forest Bostling ile geliştirilmiş ve Gradient Boostling yapısı oluşturulmuştur. Optimize edilmiş ve geliştirilmiş hali ile XGboost meydana gelmiştir.
+
+Ensemble yapısı boosting ve bagging iki yöntem ile kullanılır.
+
+Bagging yönetimi >>
+eğitim setini rastgele biçimlerde parçalanması bu parçaların KKN veya SVM veya naive bayes yöntemleriyle öğrenmesi çıkan sonuçların eğitim
+test seti ile işlenmesi ve ensemble  final output'un alınması
+
+boosting yöntemi >> her bir model için bir ağırlıklandırma vererek daha sağlıklı sounç almaya çalışır. süreç ilerledikçe ağırlıklandırmalarda güncelleme oluşturur.
+
+
+
+XGB çok güçlü bir algoritma olması model başarı tahmininde en iyi sonucu vereceğini göstermez, model seçimi biraz sezgisel bir durumdur.
+
+
+
