@@ -1,0 +1,3 @@
+###79 Üzerinde çokça çalışma yapılmış olan Telco Customer Churn Study dataset'i ile bir  çalışma yapalım.
+Total Charges sütununda veri eksikliği bulunmakta. bu eksik 11 veri için görmezden gelebiliriz veya ufak bir lineer fonksiyon ile doldurabiliriz.
+
