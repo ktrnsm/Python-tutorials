@@ -1,1 +1,6 @@
 ###76 Lightgbm
+
+büyük datalar için iyi sonuçlar veren bir yapıdır.
+ Lightgmb XGboost'tan yaklaşık 2 kat hızlı çalışır.
+
+LightGBM is a powerful and efficient machine learning library that is popular for its speed and accuracy in training large datasets.
