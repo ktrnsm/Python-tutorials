@@ -1,0 +1,28 @@
+###81 unsupervised learning
+Denetimsiz öğrenme süresinde bağımlı değişken ihtiyacımız yok.
+
+boy kilo ve cinsiyet değişkenlerimiz olsun.
+
+boy kilo grafiğinde cinsiyet(bağımlı değişken) verilerini iki farklı şekil olarak işaretlediğimizi düşünelim
+üçgen kadın yuvarlak erkek olsun.
+
+Denetimsiz makine öğrenme algoritmalarında bağımlı değişken olmadığı için sınır çizme gibi bir durumumuz yok.
+
+denetimsiz öğprenmede bu işlemi algoritmalar kümeleme yaparak ayırt etme işlemi gerçekleştirir.
+
+gerçek hayatta denetimli öğrenme ağırlıklı uygulanır.
+görüntü işleme, müşteri analizi, denetimsiz öğrenme algoritmaları kullanılır.
+
+
+k- means
+
+X1 ve X2 değerlerinin olduğu bir iki eksenli grafik düşünelim. bu sefer ayırt edici bağımlı cinsiyet gibi bir değerimiz yok.
+
+küme içerisindeki benzerlikleri maksimim yapacak kümeler arası benzerlikleri minimum yapacak. 
+kümeleme sistemidir.
+K adet kümeye bölecek.
+2 değeri verdiğimiz durumda 2 adet rastsal nokta seçilir.
+iki nokta arasındaki en kısa mesafeyi çıkartır ve noktaların hangi k rastsal noktasına yakın olduğunu hesaplar. işlemi iterasyona sokar ve devamında farklı iki rastsal nokta seçer ve yeni kümeler oluşturmaya devam eder. küme içi benzerlikleri maks kümeler arasındaki farkları min yapmaya çalışır.
+küme içinde toplanan hata kareler toplamını maksimum yapmaya çalışır.
+
+elbow yöntemi k değeri için bize göstergedir.
