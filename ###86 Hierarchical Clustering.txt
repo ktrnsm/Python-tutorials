@@ -1,1 +1,16 @@
 ###86 Hierarchical Clustering
+
+dendogram
+
+X ve y ekseninden oluşan bir grafikte rastgele noktar olduğunu hayal edin.
+en yakın noktaları bir küme içerisine aldığınızı ve kümelemeye devam ettiğinizi düşünün.
+
+iki eksenli grafiği x ekseni veri ve y ekseni mesafe ufaklığı olarak düzenlediğimizde elimizde bir mesafer ve veri(veri kümeleri) arasındaki mesafeleri veren bir diagram oluşur.
+
+k-means yapısında bizden k değerini isteniyordu ve bunu k elbow ile buluyorduk.
+veri eksenine paralel ve çok yakın bir eksen çizersek dendogram yapısı ile kesiştiği noktalar bize küme sayısını verecektir.
+bu ekseni yukarıya doğru taşıdığımızda azalan kesişmelerden dolayı azalan sayıda farklı kümeler elde edeceğiz.
+
+
+Hierarchical yapıdaki önemli konu mesafe konusudur.
+
