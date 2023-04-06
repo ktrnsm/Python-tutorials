@@ -10,6 +10,8 @@ farklı ürünlerin satışları arasındaki ilişkiyi bulmak vw buna uygun paza
 önerme algoritmaları bu yapıdan çıkmıştır.
 
 
+eclat algorithm aprioiri'nin dikleştirilmiş hali gibi düşünebilirsiniz.
+
 
 
 
