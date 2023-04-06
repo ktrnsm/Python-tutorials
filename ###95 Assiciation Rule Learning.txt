@@ -1,0 +1,15 @@
+###95 Assiciation Rule Learning
+değişkenler arasındaki ilişki yapılarını öğrenmeye çalışan bir yapı.
+veri madenciliği algoritmalarında da kullanılır.
+
+örneklersek mesela marketten gazlı içecek alıp yayında çikolata veya cips alıyorsak, ve bize benzer başkalarının da olduğunu düşünün. haliyle, bu davranış paterni,raf diziliminde kampanyalarda etkili olacaktır.
+
+Sepet analizi;
+farklı ürünlerin satışları arasındaki ilişkiyi bulmak vw buna uygun pazarlama stratejileri geliştirmek için yapılan analizdir.
+
+önerme algoritmaları bu yapıdan çıkmıştır.
+
+
+
+
+
