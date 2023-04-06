@@ -4,7 +4,7 @@ import matplotlib.pyplot as plt
 import seaborn as sns
 import datetime as dt
 from sklearn.preprocessing import MinMaxScaler
-from sklearn.cluster import KMeans
+from sklearn.cluster import KMeans,AgglomerativeClustering
 from yellowbrick.cluster import KElbowVisualizer
 #original_data=pd.read_excel("C:/Users/Şebnem/Desktop/tutorials/Online Retail.xlsx")
 #original_data.to_csv("C:/Users/Şebnem/Desktop/tutorials/Online Retail.csv",index=False)
