@@ -3,7 +3,10 @@ import pandas as pd
 import re
 from nltk.corpus import stopwords
 from nltk.stem.porter import PorterStemmer
-
+import nltk
+nltk.download('wordnet')
+from nltk.stem import WordNetLemmatizer
+lema=WordNetLemmatizer()
 
 original_data=pd.read_csv("C:/Users/Şebnem/Desktop/tutorials/spam.csv",encoding="Windows-1252")
 data=original_data.copy()
@@ -32,7 +35,7 @@ for i in range(len(data)):
     sort=re.sub('[^a-zA-Z]',' ',data["SMS"][i])
     sort=sort.lower()
     sort=sort.split()
-    sort=[ps.stem(word) for word in sort if not word in set(stopwords.words("english"))]
+    sort=[lema.lemmatize(word) for word in sort if not word in set(stopwords.words("english"))]
     sort=' '.join(sort)
     cleared_data.append(sort)
 
