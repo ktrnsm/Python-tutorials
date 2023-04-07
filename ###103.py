@@ -6,7 +6,11 @@ from nltk.stem.porter import PorterStemmer
 import nltk
 nltk.download('wordnet')
 from nltk.stem import WordNetLemmatizer
+import matplotlib.pyplot as plt
 lema=WordNetLemmatizer()
+from wordcloud import WordCloud
+import numpy as np
+from PIL import Image
 
 original_data=pd.read_csv("C:/Users/Şebnem/Desktop/tutorials/spam.csv",encoding="Windows-1252")
 data=original_data.copy()
@@ -40,5 +44,21 @@ for i in range(len(data)):
     cleared_data.append(sort)
 
 df=pd.DataFrame(list(zip(data["SMS"],cleared_data)),columns=["Original Data","Cleared Data"])
-print(df.iloc[0])
+#print(df.iloc[0])
 
+frequency=(df["Cleared Data"]).apply(lambda x:pd.value_counts(x.split(" "))).sum(axis=0).reset_index()
+frequency.columns=["Words","Frequency"]
+words=dict(frequency.values)
+#print(frequency)
+#print(frequency.info())
+#print(frequency.nunique())
+
+picture=np.array(Image.open("C:/Users/Şebnem/Desktop/tutorials/Abe.jpg"))
+#filter=frequency[frequency["Frequency"]>250]
+#filter.plot.bar(x="Words",y="Frequency")
+#plt.show()
+plt.figure(figsize=(5,5))
+cloud=WordCloud(background_color="White",mask=picture,colormap="rainbow",max_words=250).generate_from_frequencies(words)
+plt.imshow(cloud)
+plt.axis("off")
+plt.show()
