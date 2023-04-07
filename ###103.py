@@ -11,6 +11,7 @@ lema=WordNetLemmatizer()
 from wordcloud import WordCloud
 import numpy as np
 from PIL import Image
+from sklearn.feature_extraction.text import CountVectorizer
 
 original_data=pd.read_csv("C:/Users/Şebnem/Desktop/tutorials/spam.csv",encoding="Windows-1252")
 data=original_data.copy()
@@ -42,7 +43,12 @@ for i in range(len(data)):
     sort=[lema.lemmatize(word) for word in sort if not word in set(stopwords.words("english"))]
     sort=' '.join(sort)
     cleared_data.append(sort)
+cv=CountVectorizer(max_features=500)
+matrix=cv.fit_transform(cleared_data).toarray()
+matrix_df=pd.DataFrame(matrix,columns=cv.get_feature_names_out())
+print(matrix_df)
 
+"""
 df=pd.DataFrame(list(zip(data["SMS"],cleared_data)),columns=["Original Data","Cleared Data"])
 #print(df.iloc[0])
 
@@ -62,3 +68,4 @@ cloud=WordCloud(background_color="White",mask=picture,colormap="rainbow",max_wor
 plt.imshow(cloud)
 plt.axis("off")
 plt.show()
+"""
