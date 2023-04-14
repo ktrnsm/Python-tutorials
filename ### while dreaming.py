@@ -1,12 +1,18 @@
 ### while dreaming
 import googlesearch
 import re
+import time
 
 # Define the keywords to search
 keywords = ['ruyada']
 
 # Search Google for the keywords and retrieve the search results
-search_results = list(googlesearch.search('ruyada rüyada ' + ' '.join(keywords), num_results=100))
+search_results = []
+for keyword in keywords:
+    query = 'ruyada rüyada ' + keyword
+    results = list(googlesearch.search(query, num_results=10))
+    search_results.extend(results)
+    time.sleep(1) # Add a 0.5-second delay between each query
 
 # Extract the search terms that start with "ruyada"
 ruyada_terms = []
